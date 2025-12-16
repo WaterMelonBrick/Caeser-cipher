@@ -1,9 +1,4 @@
-pip install streamlit
-
-streamlit run first_app.py
-
-# Import convention
->>> import streamlit as st
+pip import streamlit
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 key = st.chat_input('Please enter the key: ')
