@@ -1,9 +1,9 @@
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-key = input('Please enter the key: ')
-key = int(key)
+key = st.chat_input('Please enter the key: ')
+key = st.chat_input(key)
 new_message = ''
 
-message = input('Please enter a message: ')
+message = st.chat_input('Please enter a message: ')
 
 for character in message:
 	position = alphabet.find(character)
@@ -13,4 +13,4 @@ for character in message:
 	new_character = alphabet[new_position]
 
 	new_message += new_character
-print(new_message)
+st.write(new_message)
